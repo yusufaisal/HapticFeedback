@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import UIKit
+
+struct HapticHandler {
+    let generator = UINotificationFeedbackGenerator()
+    static let shared = {
+        return HapticHandler()
+    }
+    
+    func successHandler(){
+        generator.notificationOccurred(.success)
+    }
+    func errorFeedback() {
+        generator.noti
+    }
+}
